@@ -1,4 +1,4 @@
 {
-  "builds": [{ "src": "api/*.rs", "use": "vercel-rust@latest" }],
+  "builds": [{ "src": "api/*.rs", "use": "softprops/vercel-rust" }],
   "routes": [{ "src": "/api/(.*)", "dest": "/api/$1.rs" }]
 }
