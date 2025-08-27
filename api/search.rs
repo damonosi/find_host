@@ -13,8 +13,8 @@ struct ApiResponse {
     error: Option<String>,
 }
 
-const HEADERS: [&str; 4] = ["IP", "Number", "Country", "Host"];
-const TSV_GZ_URL: &str = "https://example.com/data.tsv.gz"; // Replace with your actual URL
+const HEADERS: [&str; 5] = ["Ip_start","Ip_end", "Number", "Country", "Host"];
+const TSV_GZ_URL: &str = "https://iptoasn.com/data/ip2asn-combined.tsv.gz"; // Replace with your actual URL
 
 fn main() {
     let query = env::var("QUERY_STRING").unwrap_or_default();
